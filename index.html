@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas dan Keliling Segitiga</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Luas dan Keliling Segitiga</h1>
+        <form id="triangleForm">
+            <label for="sideA">Sisi A:</label>
+            <input type="number" id="sideA" name="sideA" required>
+            <label for="sideB">Sisi B:</label>
+            <input type="number" id="sideB" name="sideB" required>
+            <label for="sideC">Sisi C:</label>
+            <input type="number" id="sideC" name="sideC" required>
+            <button type="button" onclick="calculateTriangle()">Hitung</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
