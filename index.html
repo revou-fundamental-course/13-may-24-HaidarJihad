@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitung Luas dan Keliling Segitiga</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Luas dan Keliling Segitiga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hitung Luas dan Keliling Segitiga</h1>
-        <form id="triangleForm">
-            <label for="sideA">Sisi A:</label>
-            <input type="number" id="sideA" name="sideA" required>
-            <label for="sideB">Sisi B:</label>
-            <input type="number" id="sideB" name="sideB" required>
-            <label for="sideC">Sisi C:</label>
-            <input type="number" id="sideC" name="sideC" required>
-            <button type="button" onclick="calculateTriangle()">Hitung</button>
-        </form>
-        <div id="result"></div>
-    </div>
+    <header>
+        <h1>Luas dan Keliling Segitiga</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Hitung Luas Segitiga</h2>
+            <form id="luasForm">
+                <label for="alas">Alas:</label>
+                <input type="number" id="alas" name="alas" required>
+
+                <label for="tinggi">Tinggi:</label>
+                <input type="number" id="tinggi" name="tinggi" required>
+
+                <button type="submit">Hitung Luas</button>
+            </form>
+
+            <div id="luasResult">
+                <p>Luas: <span id="luasValue"></span></p>
+            </div>
+
+            <h2>Hitung Keliling Segitiga</h2>
+            <form id="kelilingForm">
+                <label for="sisi1">Sisi 1:</label>
+                <input type="number" id="sisi1" name="sisi1" required>
+
+                <label for="sisi2">Sisi 2:</label>
+                <input type="number" id="sisi2" name="sisi2" required>
+
+                <label for="sisi3">Sisi 3:</label>
+                <input type="number" id="sisi3" name="sisi3" required>
+
+                <button type="submit">Hitung Keliling</button>
+            </form>
+
+            <div id="kelilingResult">
+                <p>Keliling: <span id="kelilingValue"></span></p>
+            </div>
+        </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
